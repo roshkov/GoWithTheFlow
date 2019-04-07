@@ -1,0 +1,4 @@
+The idea was to eventually connect Firebase to Android app.
+Robert has taken responsibility to figure this out. Robet has few experience with coding
+thats why he started from the basics and even though we didnt get to the end, it was a great
+learning experience ;)

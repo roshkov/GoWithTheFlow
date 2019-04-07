@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Firebase Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+  </head>
+  <body>
+
+    <div class = "main-div">
+
+        <h3>Go with the flow login</h3>
+        <input type="email" placeholder="Email..." id=email_field/>
+        <input type="password" placeholder="Password..." id=password_field/>
+
+        <button onclick="login()"> Login to Account </button>
+
+    </div>
+
+    <div class="loggedin-div">
+
+        <h3>Welcome User</h3>
+        <p> Welcome to the Go with the flow login </p>
+
+    </div>
+
+    
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCiQEQW8-LCd0ROhJktbatHRuKxDPp_Vvc",
+        authDomain: "auhack2019.firebaseapp.com",
+        databaseURL: "https://auhack2019.firebaseio.com",
+        projectId: "auhack2019",
+        storageBucket: "auhack2019.appspot.com",
+        messagingSenderId: "354103374008"
+    };
+    firebase.initializeApp(config);
+    </script>
+
+    <script src="index.js"></script>
+
+  </body>
+</html>

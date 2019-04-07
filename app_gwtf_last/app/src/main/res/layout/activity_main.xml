@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!--<android.support.v7.widget.Toolbar-->
+    <!--android:id="@+id/my_toolbar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="?attr/actionBarSize"-->
+    <!--android:background="?attr/colorPrimary"-->
+    <!--android:elevation="4dp"-->
+    <!--android:text="GrundfossApp"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:theme="@style/ThemeOverlay.AppCompat.Dark"-->
+    <!--tools:layout_editor_absoluteX="0dp" />-->
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+    <TextView
+        android:id="@+id/YourSustainabilityScpre"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Your Sustainability Score:"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <TextView
+        android:id="@+id/scoreNum"
+        android:layout_width="161dp"
+        android:layout_height="136dp"
+
+        android:gravity="center"
+        android:text="5.3"
+        android:textSize="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/circle_frame1"
+        app:layout_constraintEnd_toStartOf="@+id/circle_frame1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/circle_frame1"
+        app:layout_constraintTop_toTopOf="@+id/circle_frame1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/points_money" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="93dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="4dp"
+        android:text="MyPoints:"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintStart_toEndOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/pointnumber"
+        android:layout_width="55dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="8dp"
+        android:text="28"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintStart_toEndOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/circle_frame1"
+        android:layout_width="273dp"
+        android:layout_height="308dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="176dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@mipmap/cir_1"
+        />
+
+    <Button
+        android:id="@+id/mystats"
+        android:layout_width="72dp"
+        android:layout_height="38dp"
+        android:text="mystats"
+        android:textSize="10dp"
+        tools:layout_editor_absoluteX="339dp"
+        tools:layout_editor_absoluteY="630dp"
+        android:onClick="goToAnotherActivity"
+        />
+
+</android.support.constraint.ConstraintLayout>
